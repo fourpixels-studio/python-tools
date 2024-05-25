@@ -63,3 +63,78 @@ folder_path = "target"
 
 # Call the function to rename files in the specified folder
 rename_files(folder_path)
+
+
+
+"""
+This Python script is designed to automate the process of renaming files in a specified 
+folder, performing several key modifications to clean and standardize the file names. 
+
+The script performs the following tasks:
+
+Prefix Removal:
+
+The script identifies and removes the prefix "y2mate.com - " from any file name that 
+starts with this string.
+
+Suffix Removal:
+
+It removes the suffix "_1080p" from the file names, ensuring this suffix is eliminated 
+if it appears before the file extension.
+
+Double Space Replacement:
+
+The script scans the file names for any occurrences of double spaces (" ") and replaces 
+them with a hyphen and a single space (" - ").
+
+Bracket Phrases:
+
+It identifies specific phrases within the file names, such as:
+
+"Official Video", 
+"Official 
+Music Video",
+"Official Lyric Video", 
+"Official Audio", 
+"Audio", 
+"Visualizer",
+"Music Visualizer". 
+
+These phrases are then enclosed in brackets, transforming, for example, "Official 
+Video" into "(Official Video)".
+
+Progress Tracking:
+
+Throughout the renaming process, the script tracks the number of files processed and 
+calculates the progress percentage, printing this information to the console to keep the 
+user informed of the script's progress.
+
+Execution Time Measurement:
+
+The script measures the total time taken to rename the files and prints this elapsed time 
+upon completion.
+
+Usage Instructions
+
+Specify the Folder Path:
+
+Modify the folder_path variable in the script to point to the directory containing the files 
+you want to rename.
+
+Run the Script:
+
+Execute the script in your Python environment. The script will process all files in the 
+specified folder according to the rules described above.
+
+Example before Running the Script:
+
+"y2mate.com - ARTIST  Song Title feat Another Artist and DJ G400 Official Video_1080p.mp4"
+
+After Running the Script:
+
+"ARTIST - Song Title feat Another Artist and DJ G400 (Official Video).mp4"
+
+By using this script, you can automate the tedious task of manually renaming multiple files, 
+ensuring consistent and clean file naming conventions in your folder.
+
+"""
